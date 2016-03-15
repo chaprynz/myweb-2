@@ -51,9 +51,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
   
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
-    <div class="w3-container field">
+    <div class="field">
       <%= f.label :title %><br />
-      <%= f.text_field :title %>
+      <%= f.text_field :title, class: "w3-container w3-light-grey", style: "width:100%" %>
     </div>
   
     <div class="field">

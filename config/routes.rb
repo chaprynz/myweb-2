@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
   devise_for :skills
-  root 'welcome#index'
+  root 'skills#index'
+  
+  resources :skills, only: [:index, :show]
+  
 end
