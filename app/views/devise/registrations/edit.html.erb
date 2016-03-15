@@ -1,39 +1,111 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
+.w3-sidenav a {padding:16px;font-weight:bold}
+</style>
+<body style="background: #E9EAED;">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:5;width:250px;">
+  <%= link_to image_tag('http://www.clipartlord.com/wp-content/uploads/2015/08/robot48.png', width: '20%'), root_path, class: "w3-border-bottom w3-large"  %>
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-text-teal w3-hide-large w3-closenav w3-large">Close ×</a>
+  <a href="#">Home</a>		
+  <a href="#">Typography</a>		
+  <a href="#">Colors</a>		
+  <a href="#">Utilities</a>	
+  <a href="#" class="w3-border-bottom">Tables</a>
+  <br>
+  <% unless skill_signed_in? %>
+    <%= link_to "Sign In", new_skill_session_path %>
+    <%= link_to "Create Skill", new_skill_registration_path %>
+  <% else %>
+    <%= link_to "Sign Out", destroy_skill_session_path, method: :delete %>
+    <%= link_to "Create Article", new_skill_registration_path%>
+    <%= link_to "Account Setting", edit_skill_registration_path%>
+    <%= link_to "Skills", new_skill_registration_path%>
+    <%= link_to "Article", new_skill_registration_path%>
   <% end %>
+</nav>
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+<div class="w3-main" style="margin-left:250px;">
 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
+<div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme w3-large">
+  <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">W3.CSS: Introduction</span>
+</div>
 
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
+<header class="w3-container w3-theme w3-padding-64 w3-padding-jumbo">
+  <h1 class="w3-xxxlarge w3-padding-16">W3.CSS</h1>
+</header>
+<div class="w3-container w3-padding-jumbo">
+<div class="w3-row-padding">
+  <!-- edit form -->
+  <h2>Edit <%= resource_name.to_s.humanize %></h2>
+  
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= devise_error_messages! %>
+    <div class="w3-container field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_area :description %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+  
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <% end %>
+  
+    <div class="field">
+      <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+      <%= f.password_field :current_password, autocomplete: "off" %>
+    </div>
+  
+    <div class="actions">
+      <%= f.submit "Update" %>
+    </div>
+  <% end %>
+  
+  <h3>Cancel my account</h3>
+  
+  <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  
+  <%= link_to "Back", :back %>
+  <!-- END EDIT FORM -->     
+</div><!-- END ROW PADDING -->
+</div><!-- END CONTAINER -->
+<footer class="w3-container w3-theme w3-padding-jumbo">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
 
-<h3>Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+     
+</body>
+</html> 
