@@ -4931,3 +4931,1980 @@ Processing by SkillsController#index as HTML
   [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered skills/index.html.erb within layouts/application (13.0ms)
 Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:28:31 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    44: <div class="w3-container w3-padding-jumbo">
+    45: <div class="w3-row-padding">
+    46:     <div class="w3-third">
+    47:         <% @skills.each do |skill| %>
+    48:             <% link_to skill do %>
+    49:                 <div class="w3-card-1 ">
+    50:                     <img style="width: 100%;" src="https://www.planwallpaper.com/static/images/beautiful-sunset-images-196063.jpg" alt="Norway">
+  app/views/skills/index.html.erb:47:in `_app_views_skills_index_html_erb___1508848162891732125_70131283455140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (153.9ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:30:53 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (90.5ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 2.4ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    44: <div class="w3-container w3-padding-jumbo">
+    45: <div class="w3-row-padding">
+    46:     <div class="w3-third">
+    47:         <% @skills.each do |skill| %>
+    48:             <% link_to skill do %>
+    49:                 <div class="w3-card-1 ">
+    50:                     <img style="width: 100%;" src="https://www.planwallpaper.com/static/images/beautiful-sunset-images-196063.jpg" alt="Norway">
+  app/views/skills/index.html.erb:47:in `_app_views_skills_index_html_erb___1508848162891732125_70131283455140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:31:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.4ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (1.9ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY create_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (27.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 3.1ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: create_at: SELECT "skills".* FROM "skills"  ORDER BY create_at DESC):
+    44: <div class="w3-container w3-padding-jumbo">
+    45: <div class="w3-row-padding">
+    46:     <div class="w3-third">
+    47:         <% @skills.each do |skill| %>
+    48:             <% link_to skill do %>
+    49:                 <div class="w3-card-1 ">
+    50:                     <img style="width: 100%;" src="https://www.planwallpaper.com/static/images/beautiful-sunset-images-196063.jpg" alt="Norway">
+  app/views/skills/index.html.erb:47:in `_app_views_skills_index_html_erb___1508848162891732125_70131283455140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.1ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:44:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.6ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 81ms (Views: 63.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 19:44:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 19:44:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 19:44:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 19:44:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:50:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 19:50:24 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 19:50:24 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 19:50:24 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 19:50:24 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:51:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 19:51:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 19:51:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 19:51:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 19:51:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:56:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 52ms (Views: 44.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:57:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 19:57:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 19:57:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 19:57:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 19:57:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 19:58:03 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 19:58:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 19:58:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 19:58:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 19:58:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:00:29 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:00:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:00:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:00:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:00:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:02:29 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (66.5ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `skill' for #<#<Class:0x007f916e65bb00>:0x007f916808cea0>
+Did you mean?  skill_url
+               @skills):
+    48:               <li> 
+    49:                     <img style="width: 100%;" src="https://www.planwallpaper.com/static/images/beautiful-sunset-images-196063.jpg" alt="Norway">
+    50:                     <div class="w3-container w3-center w3-white w3-border-bottom">
+    51:                     <h2><%= skill.title %></h2>
+    52:                     <p class="article_count">1 article</p>
+    53:                     </div>
+    54:                 
+  app/views/skills/index.html.erb:51:in `_app_views_skills_index_html_erb___1508848162891732125_70131246169540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.7ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:03:13 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:03:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:03:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:03:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:03:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/sign_in" for 123.17.176.40 at 2016-03-15 20:06:10 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:06:10 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:06:47 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:06:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:06:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:06:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:06:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/create" for 123.17.176.40 at 2016-03-15 20:08:54 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 10ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=create):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.2ms)
+
+
+Started GET "/skills/Sign_up" for 123.17.176.40 at 2016-03-15 20:09:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"Sign_up"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=Sign_up):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.1ms)
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 20:09:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:09:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:10:46 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:12:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:14:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:14:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:14:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:14:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:14:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:14:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:15:16 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:15:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:15:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:15:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:15:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:15:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:17:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:17:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:17:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:17:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:17:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:17:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:18:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.6ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 367ms (Views: 340.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:18:15 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:18:16 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:18:16 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:18:16 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:18:16 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:19:24 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:19:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:19:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:19:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:19:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:19:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/edit" for 123.17.176.40 at 2016-03-15 20:23:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (94.7ms)
+Completed 200 OK in 142ms (Views: 137.2ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/skills" for 123.17.176.40 at 2016-03-15 20:23:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4iTq9w8AxKzsbiL/4xSMcgjKOIoTlVzEKuRo1NqXHPp9j7QqcFTGIVZBxp7gB/ESgm77mF1Nx5lxOvTbtzxalA==", "skill"=>{"title"=>"finance", "description"=>"life is beautiful", "email"=>"foodlovernz@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Completed 302 Found in 172ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:24:00 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:24:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:27:54 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:27:55 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:27:55 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:27:55 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:27:55 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 20:28:01 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/index" for 123.17.176.40 at 2016-03-15 20:28:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=index):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.4ms)
+
+
+Started GET "/skills/show" for 123.17.176.40 at 2016-03-15 20:28:50 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=show):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.9ms)
+
+
+Started GET "/skills/show" for 123.17.176.40 at 2016-03-15 20:29:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 8ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=show):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.9ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:30:45 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.6ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/skills/edit" for 123.17.176.40 at 2016-03-15 20:30:56 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 80ms (Views: 76.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/skills/show" for 123.17.176.40 at 2016-03-15 20:31:10 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=show):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.9ms)
+
+
+Started GET "/1" for 123.17.176.40 at 2016-03-15 20:39:36 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/1"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (152.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:39:49 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:51:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:51:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:51:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:51:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:51:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:54:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:54:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:54:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:54:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:54:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 20:54:20 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:54:20 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 20:54:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:54:29 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:55:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 20:55:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 20:55:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 20:55:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 20:55:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/sign_in" for 123.17.176.40 at 2016-03-15 20:55:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 20:55:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/skills/edit" for 123.17.176.40 at 2016-03-15 20:55:35 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/skills/new" for 123.17.176.40 at 2016-03-15 20:55:41 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Skill with 'id'=new):
+  app/controllers/skills_controller.rb:8:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.7ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:07:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:07:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:08:35 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    37: </header>
+    38: <div class="w3-container w3-padding-jumbo">
+    39: <ul class="cf">
+    40: 			<% @podcasts.each do |podcast| %>
+    41: 				<%= link_to podcast do %>
+    42: 					<li>
+    43: 						<%= image_tag podcast.thumbnail.url(:medium) %>
+  app/views/skills/index.html.erb:40:in `_app_views_skills_index_html_erb___3165677323748119354_70180347011820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (35.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.8ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:08:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    37: </header>
+    38: <div class="w3-container w3-padding-jumbo">
+    39: <ul class="cf">
+    40: 			<% @podcasts.each do |podcast| %>
+    41: 				<%= link_to podcast do %>
+    42: 					<li>
+    43: 						<%= image_tag podcast.thumbnail.url(:medium) %>
+  app/views/skills/index.html.erb:40:in `_app_views_skills_index_html_erb___3165677323748119354_70180356454540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (35.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.8ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:10:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    37: </header>
+    38: <div class="w3-container w3-padding-jumbo">
+    39: <ul class="cf">
+    40: 			<% @podcasts.each do |podcast| %>
+    41: 				<%= link_to podcast do %>
+    42: 					<li>
+    43: 						<%= image_tag podcast.thumbnail.url(:medium) %>
+  app/views/skills/index.html.erb:40:in `_app_views_skills_index_html_erb___3165677323748119354_29835800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (133.6ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:10:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    37: </header>
+    38: <div class="w3-container w3-padding-jumbo">
+    39: <ul class="cf">
+    40: 			<% @podcasts.each do |podcast| %>
+    41: 				<%= link_to podcast do %>
+    42: 					<li>
+    43: 						<%= image_tag podcast.thumbnail.url(:medium) %>
+  app/views/skills/index.html.erb:40:in `_app_views_skills_index_html_erb___3165677323748119354_70180338832780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.9ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:11:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered skills/index.html.erb within layouts/application (59.8ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    37: </header>
+    38: <div class="w3-container w3-padding-jumbo">
+    39: <ul class="cf">
+    40: 			<% @podcasts.each do |podcast| %>
+    41: 				<%= link_to podcast do %>
+    42: 					<li>
+    43: 						<%= image_tag podcast.thumbnail.url(:medium) %>
+  app/views/skills/index.html.erb:40:in `_app_views_skills_index_html_erb___3279387755270507753_69961260826840'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:12:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 283ms (Views: 280.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:12:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:12:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:12:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:12:40 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/5" for 123.17.176.40 at 2016-03-15 21:13:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered skills/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/skills/5" for 123.17.176.40 at 2016-03-15 21:13:15 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered skills/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/skills/1" for 123.17.176.40 at 2016-03-15 21:13:36 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered skills/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:14:56 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:14:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:14:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:14:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:14:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:15:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:15:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:15:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:15:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:15:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:17:08 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:17:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:17:57 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:17:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:17:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:18:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:18:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:18:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:18:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:18:30 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:19:21 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.4ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:19:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:19:47 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 144ms (Views: 143.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:19:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:19:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/4" for 123.17.176.40 at 2016-03-15 21:20:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered skills/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:21:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:21:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:21:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:21:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:21:43 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 21:24:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:28:08 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:28:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:28:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:28:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:28:09 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:29:48 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:29:49 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:29:49 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:29:49 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:29:49 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:30:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:30:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:30:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:30:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:30:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:31:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:31:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:07 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:31:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:31:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:31:45 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:31:45 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:45 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:45 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:31:46 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:35:37 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:35:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:35:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:35:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:35:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:37:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:37:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:37:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:37:34 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:37:35 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:38:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:38:06 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:38:06 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:38:06 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:38:06 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:40:02 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:40:03 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:03 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:03 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:03 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:40:58 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:40:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:40:59 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:42:37 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:42:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:42:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:42:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:42:38 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/2" for 123.17.176.40 at 2016-03-15 21:43:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered skills/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 21:43:54 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:50:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 341ms (Views: 313.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:50:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:50:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:50:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:50:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 21:50:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:50:28 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/skills/sign_out" for 123.17.176.40 at 2016-03-15 21:52:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xMNMGLQHuI6dB4O9xYAHk6sLc677uqiQNo9SRbA8BF1baBLFy1O6AycoZ9zGk3rzIa+wvLViM81tUc5K3ZdCMw=="}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Completed 302 Found in 61ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:52:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 21:52:14 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (83.4ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/skills" for 123.17.176.40 at 2016-03-15 21:52:27 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"de6N+twSgK7TbYro5FIhYEnqZPJVIfX79zWC5mbEBb8rid1McP6OkuK6JhbDAK5A0bQbcO2io0q7v6/RLopE3Q==", "skill"=>{"title"=>"sdss", "description"=>"sdsad", "email"=>"foodlovernz@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSkill Exists (0.3ms)[0m  SELECT  1 AS one FROM "skills" WHERE "skills"."email" = 'foodlovernz@hotmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 231ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/skills" for 123.17.176.40 at 2016-03-15 21:53:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZqacLx/sBUNySSn4AzQzyMoRC6ky/jrcDEbT0dpIKsX/crGEJO+KTweiFnHXl/vu3Y7rBxIrlo8uzZ4DydhyQ==", "skill"=>{"title"=>"henry nguyen", "description"=>"sdsad", "email"=>"foodlovernz3@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSkill Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "skills" WHERE "skills"."email" = 'foodlovernz3@hotmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "skills" ("title", "description", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "henry nguyen"], ["description", "sdsad"], ["email", "foodlovernz3@hotmail.com"], ["encrypted_password", "$2a$10$/HwivYCByzfjifYt.FPTd.wwxphnUY6CIRxTnFZiJcQECgEbsxJy."], ["created_at", "2016-03-15 21:53:17.401755"], ["updated_at", "2016-03-15 21:53:17.401755"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "skills" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "skills"."id" = ?[0m  [["last_sign_in_at", "2016-03-15 21:53:17.416460"], ["current_sign_in_at", "2016-03-15 21:53:17.416460"], ["last_sign_in_ip", "123.17.176.40"], ["current_sign_in_ip", "123.17.176.40"], ["sign_in_count", 1], ["updated_at", "2016-03-15 21:53:17.417348"], ["id", 6]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Completed 302 Found in 109ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:53:17 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:57:10 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:57:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:57:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:57:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:57:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:58:25 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:58:26 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:58:26 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:58:26 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:58:26 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 21:59:22 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 21:59:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 21:59:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 21:59:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 21:59:23 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:00:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.6ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 22:00:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 22:00:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 22:00:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 22:00:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/4" for 123.17.176.40 at 2016-03-15 22:00:46 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered skills/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/skills/3" for 123.17.176.40 at 2016-03-15 22:00:52 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered skills/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/skills/6" for 123.17.176.40 at 2016-03-15 22:01:11 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered skills/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/skills/1" for 123.17.176.40 at 2016-03-15 22:01:15 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered skills/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:04:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 118ms (Views: 116.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 22:04:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:05 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:04:18 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c205be8742cbb61d35362c6f98cdce3ad3147d767e7dc62012ff12e59be9eba9.css?body=1" for 123.17.176.40 at 2016-03-15 22:04:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-92c011af92ddaa519c1d3e69df971896de84df3450acea76b1ee7775aac48475.js?body=1" for 123.17.176.40 at 2016-03-15 22:04:19 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/6" for 123.17.176.40 at 2016-03-15 22:07:56 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered skills/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 185ms (Views: 183.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/skills/5" for 123.17.176.40 at 2016-03-15 22:08:06 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered skills/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:18:39 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"  ORDER BY created_at DESC
+  Rendered skills/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 123.17.176.40 at 2016-03-15 22:18:52 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 22:19:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:19:04 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/skills/edit" for 123.17.176.40 at 2016-03-15 22:22:44 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/skills/sign_up" for 123.17.176.40 at 2016-03-15 22:23:01 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1[0m  [["id", 6]]
+Redirected to https://myweb-2-chaprynz.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 123.17.176.40 at 2016-03-15 22:23:01 +0000
+Cannot render console from 123.17.176.40! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SkillsController#index as HTML
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = ?  ORDER BY "skills"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"  ORDER BY created_at DESC[0m
+  Rendered skills/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.5ms)

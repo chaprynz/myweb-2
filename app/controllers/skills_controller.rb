@@ -1,6 +1,11 @@
 class SkillsController < ApplicationController
 
-    def show 
+    def index
+        @skills = Skill.all.order("created_at DESC")
+    end
+    
+    def show
+        @skills = Skill.find(params[:id])
     end
 
 end
